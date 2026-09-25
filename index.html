@@ -105,7 +105,51 @@ transition:0.3s;
 .amazon-button:hover{
 background:#2f5c89;
 }
-
+.links-section {
+display: flex;
+justify-content: center;
+gap: 2rem;
+margin: 3rem auto;
+max-width: 900px;
+padding: 0 1rem;
+}
+ 
+.link-category {
+flex: 1;
+min-width: 250px;
+background: #ffffff;
+border-radius: 12px;
+padding: 1.5rem;
+box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+ 
+.link-category h3 {
+margin-top: 0;
+margin-bottom: 1rem;
+color: #204060;
+}
+ 
+.link-category a {
+display: block;
+padding: 0.7rem 0;
+text-decoration: none;
+color: #204060;
+font-weight: 500;
+}
+ 
+.link-category a:hover {
+color: #2f5c89;
+}
+ 
+@media (max-width: 768px) {
+.links-section {
+flex-direction: column;
+}
+ 
+.link-category {
+width: 100%;
+}
+}
 </style>
 
 </head>
@@ -195,23 +239,30 @@ Silele Edizioni
 </a>
 </p>
 
-<h2>Profili autore</h2>
-
+<h2>Presenza online</h2>
+ 
 <p>
-Puoi seguire l'attività di Carlo Sorosina e approfondire le sue opere attraverso i seguenti profili autore.
+Puoi approfondire le opere di Carlo Sorosina attraverso i profili dedicati alla lettura e seguire la sua attività tramite i canali autore.
 </p>
-  
+ 
+<div class="profile-links">
+ 
+<div class="profile-box">
+<h3>📚 LETTERATURA</h3>
 <ul>
 <li><a href="https://www.goodreads.com/user/show/204325485-carlo-sorosina">Goodreads</a></li>
-
 <li><a href="https://www.anobii.com/it/01ff28a27627c45749/profile/activity">aNobii</a></li>
-
-<li><a href="https://www.linkedin.com/in/carlo-sorosina-738378a6/">LinkedIn</a></li>
-
+<li><a href="https://ilmiolibro.kataweb.it/utenti/560164/bg119__carlo/">ILMIOLIBRO</a></liiv>
+ 
+<div class="profile-box">
+<h3>👤 AUTORE</h3>
+<ul>
 <li><a href="https://m.facebook.com/carlo.sorosina/">Facebook</a></li>
-
-<li><a href="https://ilmiolibro.kataweb.it/utenti/560164/bg119__carlo/">ILMIOLIBRO</a></li>
+<li><a href="https://www.linkedin.com/in/carlo-sorosina-738378a6/">LinkedIn</a></li>
 </ul>
+</div>
+ 
+</div>
 
 <h2>Nota editoriale</h2>
 
