@@ -123,11 +123,15 @@ content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsa
 body{
     max-width:900px;
     margin:10px auto;
-    padding:30px;
+    padding:20px;
     font-family:Arial, sans-serif;
     line-height:1.7;
 }
-
+@media (min-width:769px){
+    body{
+        padding:30px;
+    }
+} 
 h1,h2{
     color:#204060;
 }
