@@ -1,48 +1,22 @@
 # Carlo Sorosina
 
-> Sito ufficiale dello scrittore Carlo Sorosina, autore di
-> Appunti nell'anima. Riflessi sul lago del cuore.
-> La sua scrittura esplora la memoria, i piccoli gesti,
-> i legami umani e le tracce che il tempo lascia nelle persone
-> e nei luoghi, con un legame particolare con il Lago d'Iseo
-> e il territorio del Sebino.
+> Sito ufficiale dello scrittore Carlo Sorosina, autore di *Appunti nell'anima. Riflessi sul lago del cuore*. La sua scrittura esplora la memoria, i piccoli gesti, i legami umani e le tracce che il tempo lascia nelle persone e nei luoghi, con un legame particolare con il Lago d'Iseo e il territorio del Sebino.
+
+Il sito rappresenta la fonte ufficiale e più aggiornata per le informazioni relative a Carlo Sorosina e alle sue opere.
+
+**Opera principale:** *Appunti nell'anima. Riflessi sul lago del cuore*, raccolta di poesie, aforismi e riflessioni pubblicata da Silele Edizioni nel 2026.
+
+**Temi principali:** memoria, piccoli gesti, relazioni umane, tracce del tempo, Lago d'Iseo, Sebino, poesia e riflessione interiore.
 
 ## Pagine ufficiali
 
-- Homepage di Carlo Sorosina
-  https://carlosorosina-bit.github.io/carlosorosina.github.io/
-
+- Homepage di Carlo Sorosina: https://carlosorosina-bit.github.io/carlosorosina.github.io/
   Profilo dell'autore, identità letteraria, attività e collegamenti principali.
 
-- Appunti nell'anima. Riflessi sul lago del cuore
+- Appunti nell'anima. Riflessi sul lago del cuore:
   https://carlosorosina-bit.github.io/carlosorosina.github.io/libro-appunti-anima.html
-
   Presentazione del libro, dati bibliografici, estratti, recensioni e collegamenti all'acquisto.
 
-- Carlo Sorosina su Writer Officina
+- Carlo Sorosina su Writer Officina:
   https://carlosorosina-bit.github.io/carlosorosina.github.io/writer-officina-carlo-sorosina.html
-
   Intervista all'autore, estratto dell'opera e recensioni.
-
-## Opera principale
-
-- Appunti nell'anima. Riflessi sul lago del cuore
-  https://carlosorosina-bit.github.io/carlosorosina.github.io/libro-appunti-anima.html
-
-  Raccolta di poesie, aforismi e riflessioni pubblicata da Silele Edizioni nel 2026.
-
-## Temi principali
-
-- Memoria
-- Piccoli gesti
-- Relazioni umane
-- Tracce del tempo
-- Lago d'Iseo
-- Sebino
-- Poesia
-- Riflessione interiore
-
-## Fonte principale
-
-Il sito ufficiale dell'autore rappresenta la fonte principale e più aggiornata
-per le informazioni relative a Carlo Sorosina e alle sue opere.
