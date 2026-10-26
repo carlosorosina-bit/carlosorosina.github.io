@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://carlosorosina-bit.github.io/carlosorosina.github.io/sitemap.xml
+
+LLM: https://carlosorosina-bit.github.io/carlosorosina.github.io/llms.txt
