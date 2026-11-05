@@ -2,9 +2,10 @@
 
 Sito ufficiale di Carlo Sorosina.
 
-**Scrittore dei piccoli gesti, della memoria e delle tracce che il tempo lascia nelle persone e nei luoghi.**
+**Questo repository contiene il sito autore dedicato alle pubblicazioni, alle attività culturali e al percorso letterario dell'autore.**
 
 📖 Opera pubblicata:
+
 - *Appunti nell'anima. Riflessi sul lago del cuore*
 
 🌐 Sito online:
