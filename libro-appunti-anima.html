@@ -364,6 +364,9 @@ blockquote{
 .lightbox.open{
     display:flex;
 }
+.lightbox-close:focus{
+    outline:3px solid white;
+}
 
 .lightbox img{
     max-width:95vw;
@@ -383,6 +386,9 @@ blockquote{
     font-size:2.5rem;
     cursor:pointer;
     line-height:1;
+}
+.lightbox-close:focus{
+    outline:3px solid #fff;
 }
 </style>
 </head>
@@ -593,25 +599,33 @@ Fotografie del firmacopie di <em>Appunti nell'anima. Riflessi sul lago del cuore
 presso lo stand di Silele Edizioni durante la Rassegna della Microeditoria di Chiari.
 </p>
 <div class="event-gallery">
-<a href="microeditoria-chiari-2026-01-dialogo-lettori.jpg" 
- onclick="openLightbox('microeditoria-chiari-2026-01-dialogo-lettori.jpg'); return false;"
- aria-label="Apri immagine a dimensione intera">
+<a href="microeditoria-chiari-2026-01-dialogo-lettori.jpg"
+   onclick="openLightbox(
+   'microeditoria-chiari-2026-01-dialogo-lettori.jpg',
+   'Incontro con una lettrice durante il firmacopie di Appunti nell anima alla Rassegna della Microeditoria di Chiari'
+   ); return false;"
+   aria-label="Apri immagine a dimensione intera">
 <img
 src="microeditoria-chiari-2026-01-dialogo-lettori.jpg"
 alt="Incontro con una lettrice durante il firmacopie di Appunti nell'anima alla Rassegna della Microeditoria di Chiari">
 </a>
 
-<a href="microeditoria-chiari-2026-02-stand-silele.jpg" 
- onclick="openLightbox('microeditoria-chiari-2026-02-stand-silele.jpg'); return false;"
+<a href="microeditoria-chiari-2026-02-stand-silele.jpg"
+   onclick="openLightbox(
+   'microeditoria-chiari-2026-02-stand-silele.jpg',
+   'Stand Silele Edizioni alla Rassegna della Microeditoria di Chiari con Appunti nell anima'
+   ); return false;"
  aria-label="Apri immagine a dimensione intera">
 <img
 src="microeditoria-chiari-2026-02-stand-silele.jpg"
 alt="Stand Silele Edizioni alla Rassegna della Microeditoria di Chiari con Appunti nell'anima">
 </a>
 
-<a href="microeditoria-chiari-2026-03-appunti-nellanima.jpg" 
-  onclick="openLightbox('microeditoria-chiari-2026-03-appunti-nellanima.jpg'); return false;"
-  aria-label="Apri immagine a dimensione intera">
+<a href="microeditoria-chiari-2026-03-appunti-nellanima.jpg"
+   onclick="openLightbox(
+   'microeditoria-chiari-2026-03-appunti-nellanima.jpg',
+   'Firmacopie di Appunti nell anima durante la Rassegna della Microeditoria di Chiari'
+   ); return false;"
 <img
 src="microeditoria-chiari-2026-03-appunti-nellanima.jpg"
 alt="Firmacopie di Appunti nell'anima durante la Rassegna della Microeditoria di Chiari">
@@ -713,12 +727,13 @@ onclick="closeLightbox(event)">
 </div>
 <script>
 
-function openLightbox(src){
+function openLightbox(src, altText){
 
     const lightbox=document.getElementById('lightbox');
     const image=document.getElementById('lightbox-image');
 
     image.src=src;
+    image.alt=altText;
 
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden','false');
