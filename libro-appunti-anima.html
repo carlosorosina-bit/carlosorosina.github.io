@@ -389,57 +389,6 @@ blockquote{
 
 <body>
 
-<div id="lightbox" class="lightbox" aria-hidden="true" onclick="closeLightbox()">
-
-<button
-class="lightbox-close"
-type="button"
-aria-label="Chiudi immagine"
-onclick="closeLightbox(event)">
-×
-</button>
-
-<img id="lightbox-image" src="" alt="">
-
-</div>
-<script>
-
-function openLightbox(src){
-
-    const lightbox=document.getElementById('lightbox');
-    const image=document.getElementById('lightbox-image');
-
-    image.src=src;
-
-    lightbox.classList.add('open');
-    lightbox.setAttribute('aria-hidden','false');
-
-    document.body.style.overflow='hidden';
-}
-
-function closeLightbox(event){
-
-    if(event){
-        event.stopPropagation();
-    }
-
-    const lightbox=document.getElementById('lightbox');
-
-    lightbox.classList.remove('open');
-    lightbox.setAttribute('aria-hidden','true');
-
-    document.body.style.overflow='';
-}
-
-document.addEventListener('keydown',function(event){
-
-    if(event.key==='Escape'){
-        closeLightbox();
-    }
-
-});
-
-</script>
 
 <h1>Appunti nell'anima. Riflessi sul lago del cuore</h1>
 
@@ -748,4 +697,56 @@ Piccoli gesti, grandi tracce.
 </div>
 
 </body>
+
+<div id="lightbox" class="lightbox" aria-hidden="true" onclick="closeLightbox()">
+
+<button
+class="lightbox-close"
+type="button"
+aria-label="Chiudi immagine"
+onclick="closeLightbox(event)">
+×
+</button>
+
+<img id="lightbox-image" src="" alt="">
+
+</div>
+<script>
+
+function openLightbox(src){
+
+    const lightbox=document.getElementById('lightbox');
+    const image=document.getElementById('lightbox-image');
+
+    image.src=src;
+
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden','false');
+
+    document.body.style.overflow='hidden';
+}
+
+function closeLightbox(event){
+
+    if(event){
+        event.stopPropagation();
+    }
+
+    const lightbox=document.getElementById('lightbox');
+
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden','true');
+
+    document.body.style.overflow='';
+}
+
+document.addEventListener('keydown',function(event){
+
+    if(event.key==='Escape'){
+        closeLightbox();
+    }
+
+});
+
+</script>
 </html>
