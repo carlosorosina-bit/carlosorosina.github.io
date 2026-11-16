@@ -44,7 +44,7 @@ content="default-src 'self';
 <meta name="theme-color" content="#204060"> 
 
 <link rel="icon" type="image/png" href="carlo-sorosina.png">
- 
+ <!-- Schema.org Book -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -220,7 +220,7 @@ content="default-src 'self';
 ]
 }
 </script>
- 
+ <!-- Breadcrumb Schema -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -325,6 +325,9 @@ a{
     outline:3px solid #ffffff;
     outline-offset:2px;
 }
+/************************************************
+ Copertina del libro
+************************************************/ 
 .cover{
     display:block;
     width:100%;
@@ -377,7 +380,9 @@ blockquote{
     text-align:center;
 }
  
-/* Collegamenti ufficiali Silele Edizioni */
+/************************************************
+ Editore e canali ufficiali Silele Edizioni
+************************************************/
  
 .publisher-box{
     max-width:520px;
@@ -432,7 +437,9 @@ blockquote{
     outline-offset:4px;
 }
  
-/* Galleria evento */
+/************************************************
+ Galleria fotografica Microeditoria di Chiari
+************************************************/
 
 .event-gallery{
     display:grid;
@@ -471,7 +478,9 @@ blockquote{
     }
 
 }
-/* Lightbox */
+/************************************************
+ Lightbox immagini
+************************************************/
 
 .lightbox{
     display:none;
@@ -542,6 +551,7 @@ alt="Copertina Appunti nell'anima. Riflessi sul lago del cuore"
 class="cover">
 
 <div class="center">
+ <!-- Informazioni bibliografiche -->
 <h2>Scheda tecnica</h2>
 
 <p>
@@ -570,6 +580,7 @@ class="cover">
 </p>
 </div>
  
+<!-- Collegamenti ufficiali editore -->
 <div class="publisher-box">
 <p style="text-align:center;">
 Scopri Silele Edizioni sui social:
@@ -636,6 +647,7 @@ class="amazon-button">
 </p>
 
 <div class="section">
+ <!-- Canali di vendita -->
 <h2 id="acquista">Dove acquistare il libro</h2>
 
 <ul>
@@ -651,7 +663,7 @@ class="amazon-button">
 <li><a href="https://www.silele.it/" target="_blank" rel="noopener noreferrer">Silele Edizioni</a></li>
 </ul>
 </div>
-
+<!-- Sinossi e presentazione -->
 <h2 id="libro">Il libro</h2>
 
 <p>
@@ -696,6 +708,7 @@ Memoria · Piccoli gesti · Lago d'Iseo · Tracce del tempo
 </div>
 
 <div class="section">
+ <!-- Recensioni dei lettori -->
 <h2 id="recensioni">Alcune recensioni dei lettori</h2>
 
 <blockquote class="recensione"
@@ -730,7 +743,7 @@ style="max-width:700px; margin:25px auto; padding-left:20px; border-left:4px sol
 <footer>Maria Cristina, Amazon</footer>
 </blockquote>
 </div>
- 
+ <!-- Evento pubblico e firmacopie -->
 <div class="section" id="microeditoria-chiari">
 <h2>Il libro incontra i lettori</h2>
 
@@ -804,7 +817,7 @@ decoding="async">
 </a>
  
 </div>
- 
+ <!-- Rassegna stampa e approfondimenti -->
 <h2>Intervista ed estratto su Writer Officina</h2>
 
 <p>
@@ -818,7 +831,7 @@ comprendente un'intervista sul percorso di scrittura e un estratto di
 Leggi l'intervista e l'estratto →
 </a>
 </p>
- 
+ <!-- Estratto dal libro -->
 <h2 id="estratto">Una pagina dal libro</h2>
  
 <blockquote class="poesia">
@@ -887,6 +900,7 @@ onclick="closeLightbox(event)">
 <img id="lightbox-image" src="" alt="">
  <!-- Contenuto della lightbox -->
 </div>
+ <!-- Gestione lightbox immagini -->
 <script>
   /* JavaScript della lightbox */
 function openLightbox(src, altText){
