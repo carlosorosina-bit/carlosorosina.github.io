@@ -302,7 +302,29 @@ p{
 a{
     color:#204060;
 }
+ 
+/* Collegamento per saltare al contenuto principale */
 
+.skip-link{
+    position:absolute;
+    top:-100px;
+    left:16px;
+    z-index:10000;
+    padding:10px 14px;
+    color:#ffffff;
+    background:#204060;
+    border-radius:4px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible{
+    top:16px;
+    color:#ffffff;
+    outline:3px solid #ffffff;
+    outline-offset:2px;
+}
 .cover{
     display:block;
     width:100%;
