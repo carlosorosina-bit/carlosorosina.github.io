@@ -372,6 +372,19 @@ blockquote{
     margin:0;
 }
 
+.site-footer{
+    margin-top:40px;
+    padding:20px 0;
+    border-top:1px solid #d8e0e6;
+    text-align:center;
+    color:#607080;
+    font-size:0.9rem;
+}
+
+.site-footer p{
+    margin:0;
+}
+
 /* Galleria evento */
 
 .event-gallery{
@@ -455,7 +468,13 @@ blockquote{
 
 <body>
 
+<a class="skip-link" href="#main-content">
+    Vai al contenuto principale
+</a>
 
+<main id="main-content" tabindex="-1">
+  <!-- Tutto il contenuto della pagina -->
+  <!-- Compreso il box autore finale -->
 <h1>Appunti nell'anima. Riflessi sul lago del cuore</h1>
 
 <p class="center">
@@ -818,7 +837,12 @@ Piccoli gesti, grandi tracce.
           </a>
     </p>
 </div>
-
+ 
+</main>
+<footer class="site-footer">
+    <p>© 2026 Carlo Sorosina</p>
+</footer>
+ 
 <div id="lightbox" 
      class="lightbox" 
      role="dialog"
@@ -835,10 +859,10 @@ onclick="closeLightbox(event)">
 </button>
 
 <img id="lightbox-image" src="" alt="">
-
+ <!-- Contenuto della lightbox -->
 </div>
 <script>
-
+  /* JavaScript della lightbox */
 function openLightbox(src, altText){
 
     const lightbox=document.getElementById('lightbox');
