@@ -406,7 +406,32 @@ blockquote{
 .site-footer p{
     margin:0;
 }
+ 
+.back-to-author{
+    margin:40px 0 25px;
+    text-align:center;
+}
 
+.back-to-author a{
+    display:inline-block;
+    padding:10px 16px;
+    border:1px solid #204060;
+    border-radius:6px;
+    color:#204060;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.back-to-author a:hover{
+    background:#204060;
+    color:#ffffff;
+}
+
+.back-to-author a:focus-visible{
+    outline:3px solid #204060;
+    outline-offset:4px;
+}
+ 
 /* Galleria evento */
 
 .event-gallery{
@@ -833,27 +858,11 @@ Piccoli gesti, grandi tracce.
 <strong>Se queste pagine hanno fatto riaffiorare un ricordo, un luogo o un'emozione, puoi continuare la lettura scegliendo il formato che preferisci.</strong>
 </p>
 
-<div style="border-left:4px solid #204060; padding:15px 20px; margin:50px 0 35px; background:#fafafa;">
-    <h2 style="margin-top:0;">Carlo Sorosina</h2>
-
-    <p>
-        Scrittore dei piccoli gesti, della memoria e delle tracce che il tempo
-        lascia nelle persone e nei luoghi.
-    </p>
-
-    <p style="margin-bottom:0;">
-        <a href="index.html">
-            → Vai alla pagina autore
-        </a>
-    </p> 
-     <p style="margin-bottom:0;">
-        <a href="https://www.amazon.it/stores/Carlo-Sorosina/author/B0HL5W121D"
-           target="_blank"
-           rel="noopener noreferrer">
-            → Profilo autore Amazon
-          </a>
-    </p>
-</div>
+<p class="back-to-author">
+    <a href="index.html">
+        ← Vai alla pagina autore di Carlo Sorosina
+    </a>
+</p>
  
 </main>
 <footer class="site-footer">
