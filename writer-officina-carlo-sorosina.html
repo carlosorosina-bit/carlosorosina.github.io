@@ -161,6 +161,34 @@ a{
 a:hover{
     text-decoration:underline;
 }
+/* Collegamento per saltare al contenuto principale */
+.skip-link{
+    position:absolute;
+    top:-100px;
+    left:16px;
+    z-index:10000;
+    padding:10px 14px;
+    color:#ffffff;
+    background:#204060;
+    border-radius:4px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible{
+    top:16px;
+    color:#ffffff;
+    outline:3px solid #ffffff;
+    outline-offset:2px;
+}
+
+footer{
+    margin-top:50px;
+    font-size:.95em;
+    color:#666;
+}
+
 footer{
     margin-top:50px;
     font-size:.95em;
@@ -182,9 +210,16 @@ footer{
 </head>
 
 <body>
-<main>
+<a class="skip-link" href="#main-content">
+    Vai al contenuto principale
+</a>
+    
+<main id="main-content" tabindex="-1">
+    
 <h1>Carlo Sorosina su Writer Officina</h1>
-
+    
+ <!-- Tutto il contenuto della pagina -->
+    
 <p class="intro">
 Intervista all'autore ed estratto di
 <em>Appunti nell'anima. Riflessi sul lago del cuore</em>.
