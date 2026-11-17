@@ -439,6 +439,74 @@ blockquote{
 }
  
 /************************************************
+ Approfondimento sul percorso editoriale
+************************************************/
+
+.percorso-editoriale-box{
+    max-width:620px;
+    margin:30px auto 35px;
+    padding:24px;
+    border:1px solid #ccd8e1;
+    border-radius:10px;
+    background:#f7fafc;
+    text-align:center;
+    box-sizing:border-box;
+}
+
+.percorso-editoriale-box h3{
+    margin:0 0 12px;
+    color:#204060;
+    font-size:1.35rem;
+    line-height:1.35;
+}
+
+.percorso-editoriale-box p{
+    margin:0 0 18px;
+    line-height:1.65;
+}
+
+.percorso-editoriale-button{
+    display:inline-block;
+    padding:13px 22px;
+    border:2px solid #204060;
+    border-radius:6px;
+    background:#204060;
+    color:#ffffff;
+    font-weight:700;
+    line-height:1.35;
+    text-decoration:none;
+    transition:
+        background-color .2s ease,
+        color .2s ease,
+        transform .2s ease;
+}
+
+.percorso-editoriale-button:hover{
+    background:#ffffff;
+    color:#204060;
+    transform:translateY(-1px);
+}
+
+.percorso-editoriale-button:focus-visible{
+    outline:3px solid rgba(32,64,96,.35);
+    outline-offset:4px;
+}
+
+@media (max-width:600px){
+    .percorso-editoriale-box{
+        margin:25px 10px 30px;
+        padding:20px 16px;
+    }
+
+    .percorso-editoriale-button{
+        display:block;
+        width:100%;
+        padding:14px 16px;
+        box-sizing:border-box;
+    }
+}
+ 
+/************************************************
  Galleria fotografica Microeditoria di Chiari
 ************************************************/
 
@@ -614,7 +682,28 @@ Scopri Silele Edizioni sui social:
     Scopri perché ho scelto Silele Edizioni →
   </a>
 </p>
- 
+<!-- Approfondimento sul percorso editoriale con Silele Edizioni -->
+<aside class="percorso-editoriale-box"
+       aria-labelledby="titolo-percorso-editoriale">
+
+  <h3 id="titolo-percorso-editoriale">
+    Il percorso editoriale con Silele Edizioni
+  </h3>
+
+  <p>
+    Dalla nascita di <em>Appunti nell’anima</em> all’incontro
+    con una realtà dell’editoria indipendente italiana:
+    una riflessione personale sulle scelte, sulle relazioni
+    e sul cammino che accompagna ogni pubblicazione.
+  </p>
+
+  <a class="percorso-editoriale-button"
+     href="perche-ho-scelto-silele-edizioni.html">
+    Leggi il mio percorso editoriale
+  </a>
+
+</aside>
+
 <p style="text-align:center;">
 <strong>Disponibile in formato cartaceo e digitale</strong>
 </p>
