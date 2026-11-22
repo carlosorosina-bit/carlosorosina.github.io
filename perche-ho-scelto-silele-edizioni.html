@@ -217,15 +217,18 @@
     .articolo-corpo blockquote p { margin: 0; }
     .articolo-immagine { margin: 42px 0; text-align: center; }
 .articolo-immagine-principale {
-    padding: clamp(18px, 4vw, 32px);
+    max-width: 680px;
+    margin: 28px auto;
+    padding: 16px;
     border: 1px solid var(--color-border);
     border-radius: 7px;
     background: #fff8f0;
 }
+
 .articolo-immagine img {
     display: block;
     width: 100%;
-    max-width: 620px;
+    max-width: 520px;
     margin: 0 auto;
     object-fit: contain;
 }
