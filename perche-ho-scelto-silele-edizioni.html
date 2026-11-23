@@ -272,20 +272,22 @@
  /* Tutte le regole CSS già presenti sopra */
 
   .site-footer {
-    width: min*100%, var(--content-width));
-    m*rgin: 0 auto;
-    padding: 24px va*(--page-padding) 36px;
-    border-*op: 1px solid var(--color-border);
-    color: var(--color-muted);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .86rem;
-    line-height: 1.5;
-    text-align: center;
-  }
+  width: 100%;
+  max-width: var(--content-width);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 24px var(--page-padding) 36px;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  text-align: center;
+}
 
-  .site-footer p {
-    margin: 6px 0;
-  }
+.site-footer p {
+  margin: 6px 0;
+}
     @media (max-width: 768px) {
       :root { --page-padding: 18px; }
       body { font-size: 17.5px; line-height: 1.7; }
