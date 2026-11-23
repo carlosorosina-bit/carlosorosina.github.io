@@ -69,10 +69,10 @@
         "caption": "Il percorso editoriale di Carlo Sorosina con Silele Edizioni"
       },
       "author": {
-        "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/#person"
+        "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/#carlo-sorosina"
       },
       "publisher": {
-        "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/#person"
+        "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/#carlo-sorosina"
       },
       "about": [
         {
@@ -92,16 +92,11 @@
         }
       ],
       "mentions": [
-        {
-          "@type": "Book",
-          "name": "Appunti nell’anima. Riflessi sul lago del cuore",
-          "isbn": "9788833483290"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "Le dita birichine – Storie di mani e piedi"
-        }
-      ],
+  {
+    "@type": "CreativeWork",
+    "name": "Le dita birichine – Storie di mani e piedi"
+  }
+],
       "keywords": [
         "Carlo Sorosina",
         "Silele Edizioni",
@@ -115,7 +110,7 @@
     },
     {
       "@type": "Person",
-      "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/#person",
+      "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/#carlo-sorosina",
       "name": "Carlo Sorosina",
       "url": "https://carlosorosina-bit.github.io/carlosorosina.github.io/",
       "birthPlace": {
@@ -274,6 +269,23 @@
     .box-autore a, .box-collegamenti a { font-weight: 700; }
     .link-list { margin: 0; padding-left: 1.2rem; }
     .link-list li + li { margin-top: .45rem; }
+ /* Tutte le regole CSS già presenti sopra */
+
+  .site-footer {
+    width: min*100%, var(--content-width));
+    m*rgin: 0 auto;
+    padding: 24px va*(--page-padding) 36px;
+    border-*op: 1px solid var(--color-border);
+    color: var(--color-muted);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .86rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .site-footer p {
+    margin: 6px 0;
+  }
     @media (max-width: 768px) {
       :root { --page-padding: 18px; }
       body { font-size: 17.5px; line-height: 1.7; }
@@ -387,9 +399,17 @@
 <nav aria-labelledby="approfondimenti" class="box-collegamenti">
 <h2 id="approfondimenti">Approfondimenti</h2>
 <ul class="link-list">
-<li><a href="https://carlosorosina-bit.github.io/carlosorosina.github.io/" rel="noopener noreferrer" target="_blank">Sito ufficiale di Carlo Sorosina</a></li>
-<li><a href="https://carlosorosina-bit.github.io/carlosorosina.github.io/libro-appunti-anima.html" rel="noopener noreferrer" target="_blank"><cite>Appunti nell’anima. Riflessi sul lago del cuore</cite></a></li>
-<li><a href="https://carlosorosina-bit.github.io/carlosorosina.github.io/writer-officina-carlo-sorosina.html" rel="noopener noreferrer" target="_blank">Carlo Sorosina su Writer Officina</a></li>
+<li><a href="index.html">Sito ufficiale di Carlo Sorosina</a></li>
+<li>
+  <a href="libro-appunti-anima.html">
+    <cite>Appunti nell’anima. Riflessi sul lago del cuore</cite>
+  </a>
+</li>
+<li>
+  <a href="writer-officina-carlo-sorosina.html">
+    Carlo Sorosina su Writer Officina
+  </a>
+</li>
 <li><a href="https://www.silele.it/" rel="noopener noreferrer" target="_blank">Silele Edizioni</a></li>
 <li><a href="https://silele.it/the-other" rel="noopener noreferrer" target="_blank">Collana <cite>The Other</cite></a></li>
 </ul>
@@ -398,10 +418,22 @@
 <h2 id="autore-carlo-sorosina">L’autore</h2>
 <p><strong>Carlo Sorosina</strong> è uno scrittore dei piccoli gesti, della memoria e delle tracce che il tempo lascia nelle persone e nei luoghi. Nato a Bergamo nel 1987, conserva un forte legame con il Lago d’Iseo e il territorio del Sebino.</p>
 <p>Nel 2026 ha pubblicato con Silele Edizioni <cite>Appunti nell’anima. Riflessi sul lago del cuore</cite>, raccolta di poesie, aforismi e riflessioni.</p>
-<p><a href="https://carlosorosina-bit.github.io/carlosorosina.github.io/" rel="noopener noreferrer" target="_blank">Scopri il percorso e le attività di Carlo Sorosina</a></p>
+<p>
+  <a href="index.html">
+    Scopri il percorso e le attività di Carlo Sorosina
+  </a>
+</p>
 </section>
 </footer>
 </article>
 </main>
+
+<footer class="site-footer">
+  <p>
+    <a href="index.html">← Torna alla pagina autore</a>
+  </p>
+  <p>© 2026 Carlo Sorosina</p>
+</footer>
+
 </body>
 </html>
