@@ -21,8 +21,8 @@ content="default-src 'self';
 <meta property="og:title" content="Appunti nell'anima. Riflessi sul lago del cuore">
 <meta property="og:description" content="Poesie, aforismi e riflessioni dedicate alla memoria, ai legami umani e ai paesaggi del Lago d'Iseo.">
 <meta property="og:url" content="https://carlosorosina-bit.github.io/carlosorosina.github.io/libro-appunti-anima.html">
-<meta property="og:image" content="https://carlosorosina-bit.github.io/carlosorosina.github.io/appunti-nell-anima-copertina.jpg">
-<meta property="og:image:secure_url" content="https://carlosorosina-bit.github.io/carlosorosina.github.io/appunti-nell-anima-copertina.jpg">
+<meta property="og:image" content="https://carlosorosina-bit.github.io/carlosorosina.github.io/social-appunti-nellanima-1200x630.jpg">
+<meta property="og:image:secure_url" content="https://carlosorosina-bit.github.io/carlosorosina.github.io/social-appunti-nellanima-1200x630.jpg">
 <meta property="og:image:alt" content="Copertina di Appunti nell'anima. Riflessi sul lago del cuore">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
@@ -31,7 +31,7 @@ content="default-src 'self';
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Appunti nell'anima. Riflessi sul lago del cuore | Carlo Sorosina">
 <meta name="twitter:description" content="Poesie, aforismi e riflessioni dedicate alla memoria, ai legami umani e ai luoghi che continuano a vivere dentro di noi.">
-<meta name="twitter:image" content="https://carlosorosina-bit.github.io/carlosorosina.github.io/appunti-nell-anima-copertina.jpg">
+<meta name="twitter:image" content="https://carlosorosina-bit.github.io/carlosorosina.github.io/social-appunti-nellanima-1200x630.jpg">
  
 <title>Appunti nell'anima. Riflessi sul lago del cuore | Carlo Sorosina</title>
  
@@ -283,6 +283,10 @@ img{
 } 
 h1,h2{
     color:#204060;
+}
+
+h1{
+    text-align:center;
 }
  
 h2{
@@ -634,6 +638,8 @@ Per chi conserva ricordi che il tempo non ha cancellato e sa riconoscere nei pic
 <img
 src="appunti-nell-anima-copertina.jpg"
 alt="Copertina Appunti nell'anima. Riflessi sul lago del cuore"
+width="1200"
+height="1847"
 class="cover">
 
 <div class="center">
@@ -976,6 +982,8 @@ presso lo stand di Silele Edizioni durante la Rassegna della Microeditoria di Ch
 <img
 src="microeditoria-chiari-2026-01-dialogo-lettori.jpg"
 alt="Dialogo con una lettrice alla Rassegna della Microeditoria di Chiari"
+width="1536"
+height="2048"
 loading="lazy"
 decoding="async">
 </a>
@@ -989,6 +997,8 @@ decoding="async">
 <img
 src="microeditoria-chiari-2026-02-stand-silele.jpg"
 alt="Stand Silele Edizioni alla Rassegna della Microeditoria di Chiari con Appunti nell'anima"
+width="1500"
+height="2000"
 loading="lazy"
 decoding="async">
 </a>
@@ -1002,6 +1012,8 @@ decoding="async">
 <img
 src="microeditoria-chiari-2026-03-appunti-nellanima.jpg"
 alt="Firmacopie di Appunti nell'anima durante la Rassegna della Microeditoria di Chiari"
+width="1500"
+height="2000"
 loading="lazy"
 decoding="async">
 </a>
@@ -1066,6 +1078,7 @@ Piccoli gesti, grandi tracce.
      role="dialog"
      aria-modal="true"
      aria-hidden="true"
+     aria-label="Immagine ingrandita"
      onclick="closeLightbox()">
 
 <button
@@ -1085,18 +1098,71 @@ Piccoli gesti, grandi tracce.
  <!-- Gestione lightbox immagini -->
 <script>
   /* JavaScript della lightbox */
+let lastLightboxFocus=null;
+let lightboxBackground=null;
+
+function setLightboxBackground(active){
+    const lightbox=document.getElementById('lightbox');
+    const siblings=Array.from(document.body.children);
+
+    if(active){
+        lightboxBackground=siblings
+            .filter(function(el){ return el !== lightbox; })
+            .map(function(el){
+                return {
+                    el: el,
+                    hadInert: el.hasAttribute('inert'),
+                    ariaHidden: el.getAttribute('aria-hidden')
+                };
+            });
+
+        lightboxBackground.forEach(function(item){
+            item.el.setAttribute('inert','');
+            item.el.setAttribute('aria-hidden','true');
+        });
+        return;
+    }
+
+    if(!lightboxBackground){
+        return;
+    }
+
+    lightboxBackground.forEach(function(item){
+        if(item.hadInert){
+            item.el.setAttribute('inert','');
+        }else{
+            item.el.removeAttribute('inert');
+        }
+
+        if(item.ariaHidden === null){
+            item.el.removeAttribute('aria-hidden');
+        }else{
+            item.el.setAttribute('aria-hidden', item.ariaHidden);
+        }
+    });
+    lightboxBackground=null;
+}
+
 function openLightbox(src, altText){
 
     const lightbox=document.getElementById('lightbox');
     const image=document.getElementById('lightbox-image');
+    const closeButton=lightbox.querySelector('.lightbox-close');
+
+    lastLightboxFocus=document.activeElement;
 
     image.src=src;
     image.alt=altText;
 
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden','false');
+    setLightboxBackground(true);
 
     document.body.style.overflow='hidden';
+
+    if(closeButton){
+        closeButton.focus();
+    }
 }
 
 function closeLightbox(event){
@@ -1106,17 +1172,45 @@ function closeLightbox(event){
     }
 
     const lightbox=document.getElementById('lightbox');
+    const wasOpen=lightbox.classList.contains('open');
+
+    if(!wasOpen){
+        return;
+    }
 
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden','true');
+    setLightboxBackground(false);
 
     document.body.style.overflow='';
+
+    if(lastLightboxFocus && typeof lastLightboxFocus.focus === 'function'){
+        lastLightboxFocus.focus();
+    }
+    lastLightboxFocus=null;
 }
 
 document.addEventListener('keydown',function(event){
 
+    const lightbox=document.getElementById('lightbox');
+    const isOpen=lightbox.classList.contains('open');
+
+    if(!isOpen){
+        return;
+    }
+
     if(event.key==='Escape'){
+        event.preventDefault();
         closeLightbox();
+        return;
+    }
+
+    if(event.key==='Tab'){
+        event.preventDefault();
+        const closeButton=lightbox.querySelector('.lightbox-close');
+        if(closeButton){
+            closeButton.focus();
+        }
     }
 
 });
