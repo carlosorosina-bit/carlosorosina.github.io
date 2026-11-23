@@ -15,61 +15,60 @@ content="default-src 'self';
 
 <meta name="theme-color" content="#204060">
     <!-- Schema.org Article -->
-<script type="application/ld+json"> 
-    { "@context":"https://schema.org", 
-      "@type":"Article", 
-      "@id":"https://carlosorosina-bit.github.io/carlosorosina.github.io/writer-officina-carlo-sorosina.html#article", 
-    
-      "mainEntityOfPage":{ 
-         "@type":"WebPage", 
-         "@id":"https://carlosorosina-bit.github.io/carlosorosina.github.io/writer-officina-carlo-sorosina.html" }, 
-    
-         "headline":"Carlo Sorosina su Writer Officina: intervista, estratto e recensioni", 
-         "name": "Carlo Sorosina su Writer Officina",
-         "description":"Intervista, estratto e recensioni di Appunti nell'anima. Riflessi sul lago del cuore pubblicati su Writer Officina.",
-         "datePublished":"2026-10-22T00:00:00+01:00",
-         "dateModified":"2026-11-09T00:00:00+01:00",
-         "image":"https://carlosorosina-bit.github.io/carlosorosina.github.io/appunti-nell-anima-copertina.jpg",
-    
-    "inLanguage":"it-IT",
-    
-    "author":{ "@type":"Person", 
-               "@id":"https://carlosorosina-bit.github.io/carlosorosina.github.io/#carlo-sorosina",
-               "name":"Carlo Sorosina",
-               "url":"https://carlosorosina-bit.github.io/carlosorosina.github.io/"
-    }, 
-    
-    "about":[  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/writer-officina-carlo-sorosina.html#article",
+  "url": "https://carlosorosina-bit.github.io/carlosorosina.github.io/writer-officina-carlo-sorosina.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/writer-officina-carlo-sorosina.html"
+  },
+  "headline": "Carlo Sorosina su Writer Officina: intervista, estratto e recensioni",
+  "name": "Carlo Sorosina su Writer Officina",
+  "description": "Intervista, estratto e recensioni di Appunti nell'anima. Riflessi sul lago del cuore pubblicati su Writer Officina.",
+  "datePublished": "2026-10-22T00:00:00+01:00",
+  "dateModified": "2026-11-09T00:00:00+01:00",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://carlosorosina-bit.github.io/carlosorosina.github.io/appunti-nell-anima-copertina.jpg"
+  },
+  "inLanguage": "it-IT",
+  "author": {
+    "@type": "Person",
+    "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/#carlo-sorosina",
+    "name": "Carlo Sorosina",
+    "url": "https://carlosorosina-bit.github.io/carlosorosina.github.io/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/#carlo-sorosina"
+  },
+  "about": [
     {
-      "@type":"Person",
-      "@id":"https://carlosorosina-bit.github.io/carlosorosina.github.io/#carlo-sorosina"
+      "@type": "Organization",
+      "@id": "https://www.writerofficina.com/#organization",
+      "name": "Writer Officina",
+      "url": "https://www.writerofficina.com/"
     },
     {
-      "@type":"Book",
-      "@id":"https://carlosorosina-bit.github.io/carlosorosina.github.io/libro-appunti-anima.html#book"
+      "@type": "Book",
+      "@id": "https://carlosorosina-bit.github.io/carlosorosina.github.io/libro-appunti-anima.html#book"
     }
-    ],
-    "keywords":[ "memoria",
-                 "piccoli gesti",
-                 "lago d'iseo",
-                 "sebino",
-                 "scrittura poetica",
-                 "appunti nell'anima"
-],
-    
-   "mentions":[
-    {
-      "@type":"Book",
-      "@id":"https://carlosorosina-bit.github.io/carlosorosina.github.io/libro-appunti-anima.html#book"
-    }
-   ],  
-    "publisher":{
-  "@type":"Organization",
-  "name":"Writer Officina",
-  "url":"https://www.writerofficina.com/"
+  ],
+  "keywords": [
+    "Carlo Sorosina",
+    "Writer Officina",
+    "Appunti nell'anima",
+    "intervista",
+    "estratto",
+    "recensioni"
+  ]
 }
-} 
-</script> 
+</script>
+
 <!-- Breadcrumb Schema -->
 <script type="application/ld+json">
 {
@@ -121,7 +120,7 @@ content="Appunti nell'anima. Riflessi sul lago del cuore">
 <meta name="twitter:title" content="Carlo Sorosina su Writer Officina: intervista ed estratto">
 <meta name="twitter:description" content="Intervista a Carlo Sorosina ed estratto di Appunti nell'anima. Riflessi sul lago del cuore.">
 <meta name="twitter:image" content="https://carlosorosina-bit.github.io/carlosorosina.github.io/appunti-nell-anima-copertina.jpg">
- 
+<meta name="twitter:image:alt" content="Carlo Sorosina su Writer Officina: intervista, estratto e recensioni"> 
     <!-- Stili principali pagin* Writer Off*cina --> 
 <style>
     /* Layout principale pagina */
@@ -148,6 +147,11 @@ h1,h2{
 }
 .intro{
     font-size:1.1em;
+}
+.article-meta{
+    margin-top:-8px;
+    color:#666;
+    font-size:.92rem;
 }
     /* Box informativi e collegamenti esterni */
 .box{
@@ -196,12 +200,6 @@ footer{
     font-size:.95em;
     color:#666;
 }
-
-footer{
-    margin-top:50px;
-    font-size:.95em;
-    color:#666;
-}
 .site-footer{
     margin-top:40px;
     padding:20px 0;
@@ -232,7 +230,12 @@ footer{
 Intervista all'autore ed estratto di
 <em>Appunti nell'anima. Riflessi sul lago del cuore</em>.
 </p>
-
+<p class="article-meta">
+  Pubblicato il
+  <time datetime="2026-10-22">22 ottobre 2026</time>
+  · Aggiornato il
+  <time datetime="2026-11-09">9 novembre 2026</time>
+</p>
 <p>
 Questa pagina raccoglie l'intervista a Carlo Sorosina pubblicata da Writer Officina, un estratto di <em>Appunti nell'anima. Riflessi sul lago del cuore</em> e la recensione dedicata all'opera.
 </p>
