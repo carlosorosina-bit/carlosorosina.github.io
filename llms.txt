@@ -8,6 +8,7 @@ Carlo Sorosina è uno scrittore italiano nato a Bergamo. Il suo sito ufficiale �
 
 - [Sito ufficiale di Carlo Sorosina](https://carlosorosina-bit.github.io/carlosorosina.github.io/): homepage autore, presentazione, riferimenti alle opere pubblicate e alle attività documentate.
 - [Appunti nell'anima. Riflessi sul lago del cuore - scheda del libro](https://carlosorosina-bit.github.io/carlosorosina.github.io/libro-appunti-anima.html): pagina ufficiale del libro pubblicato, con dati editoriali, descrizione, estratti e riferimenti esterni.
+- [Presentazioni e incontri con Carlo Sorosina](https://carlosorosina-bit.github.io/carlosorosina.github.io/presentazioni-incontri.html): pagina ufficiale dedicata a presentazioni, incontri di lettura, conversazioni con moderatore e attività culturali per biblioteche, librerie, associazioni e gruppi di lettura; include la proposta legata ad Appunti nell'anima ed è predisposta ad accogliere le future opere pubblicate.
 - [Perché ho scelto Silele Edizioni - percorso editoriale](https://carlosorosina-bit.github.io/carlosorosina.github.io/perche-ho-scelto-silele-edizioni.html): articolo di Carlo Sorosina sul percorso editoriale con Silele Edizioni e sul contesto dei progetti documentati sul sito.
 - [Carlo Sorosina su Writer Officina](https://carlosorosina-bit.github.io/carlosorosina.github.io/writer-officina-carlo-sorosina.html): pagina ufficiale che raccoglie i rimandi a intervista, estratto e recensioni pubblicati su Writer Officina.
 
